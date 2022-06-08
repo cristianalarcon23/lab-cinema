@@ -65,7 +65,7 @@ h1 {
   width:192px;
   height:270px;
   background-color: #423E3D;
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 .results > div > h4 {
@@ -87,7 +87,7 @@ h1 {
   opacity: 1;
   border-radius: 10%;
   text-decoration: none;
-  font-size: 0.65em;
+  font-size: 1em;
 }
 
 .details {
