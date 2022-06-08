@@ -1,9 +1,6 @@
 <h1>List of movies:</h1>
 {{#each movies}}
 <p>Title: {{ this.title }}</p>
-  <p>Stars: {{ this.stars }}</p>
-  <p>Description: {{ this.description }}</p>
   <img width="200px" src="{{this.image}}" alt="{{this.title}}" />
-  <p>Show Times: {{ this.showtimes }}</p>
-  <p>Director: {{ this.director }}</p>
+  <p><a href="/movies/{{this._id}}">See more</a></p>
 {{/each}}
