@@ -1,8 +1,109 @@
-body {
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+
+.index-body {
+  margin: 0;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/cinema.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(138, 210, 255);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20%;
+}
+
+#index-form {
+  display:flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}
+
+h1 {
+  display: flex;
+  font: 70px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  align-items: right;
+  justify-content: right;
+}
+
+.results {
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content:space-around;
+  padding: 0px 0px 0px 0px;
+  background-color: white;
+}
+
+
+.results > div {
+  margin:100px 100px 100px 100px;
+  width:192px;
+  height:270px;
+  background-color: #423E3D;
+  color:white;
+}
+
+.results > div > h4 {
+  margin:0px;
+  font-size: 1em;
+  width:192px;
+  padding-bottom: 5px;
+}
+
+.results > div > p {
+  margin:0px;
+  padding-bottom: 5px;
+}
+
+.results > div > a {
+  background-color: lightskyblue;
+  color: white;
+  padding: 5px 10px;
+  opacity: 1;
+  border-radius: 10%;
+  text-decoration: none;
+  font-size: 0.65em;
+}
+
+.details {
+  display: flex;
+}
+
+.detail-image {
+  justify-content: left;
+  padding-top: 25px;
+
+}
+
+.detail-description {
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  padding-top: 0;
+  padding-right: 500px;
+  padding-left: 45px;
 }

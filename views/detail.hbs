@@ -1,13 +1,20 @@
-<p><a href="/movies">Go Back</a></p>
-<img width="200px" src="{{this.image}}" alt="{{this.title}}" />
-<p>{{ this.title }}</p>
-<p>Director: {{ this.director }}</p>
-<ul>
-{{#each stars}}
-    <li>{{ this }}</li>
-{{/each}}
-</ul>
-<p>{{ this.description }}</p>
-{{#each showtimes}}
-    {{ this }} |
-{{/each}}
+<div class="details">
+    <div class="detail-image"><img width="200px" src="{{this.image}}" alt="{{this.title}}" /></div>
+<div class="detail-description">
+    <strong><h3><a href="/movies">Go back</a></h3>
+    <h2>{{ this.title }}</h2>
+    <h3>Director: {{ this.director }}</h3>
+    <h3>Stars:</h3></strong>
+    <ul>
+    {{#each stars}}
+        <li>{{ this }}</li>
+    {{/each}}
+    </ul>
+    <p>{{ this.description }}</p>
+    {{#each showtimes}}
+        {{ this }} |
+    {{/each}}
+</div>
+
+</div>
+
